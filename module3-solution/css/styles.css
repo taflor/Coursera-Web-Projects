@@ -1,1 +1,44 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Mukta', sans-serif;
+    background-color: #9BBB09;
+}
 
+/** Header **/
+#header-nav {
+    background-color: #D9DF2D;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('../images/logo_large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+#navbar-brand {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+
+}
+
+#footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#footer p {
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+}
