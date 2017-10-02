@@ -5,7 +5,7 @@ body {
     background-color: #669E00;
 }
 
-/** Header **/
+/** HEADER **/
 #header-nav {
     background-color: #D9DF2D;
     border-radius: 0;
@@ -132,6 +132,22 @@ body {
     #collapsable-nav a span { /* override size of icon */
         font-size: 1em;
         margin-right: 5px;
+    }
+
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color:#D9DF2D;
+        color: #73529A;
+    }
+    #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
     }
 }
 
