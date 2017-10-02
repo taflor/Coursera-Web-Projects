@@ -125,6 +125,14 @@ body {
     .navbar-brand p img { /* Leaf image */
         height: 20px;
     }
+    #collapsable-nav a { /* Collapsed nav menu glyph */
+        font-size: 1.2em;
+        vertical-align: center;
+    }
+    #collapsable-nav a span { /* override size of icon */
+        font-size: 1em;
+        margin-right: 5px;
+    }
 }
 
 #footer a {
