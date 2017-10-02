@@ -82,13 +82,24 @@ body {
 }
 /* END HEADER */
 
+/* HOME PAGE */
+.container .jumbotron {
+    box-shadow: 0 0 50px #08300A;
+    border: 2px solid #08300A;
+}
+/* END HOME PAGE */
+
 /*****************************************/
 /************* Media Queries *************/
 /*****************************************/
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+    /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_1200.jpeg') no-repeat;
+        height: 800px;
+    }
 }
 
 /********** Medium devices only **********/
@@ -100,11 +111,23 @@ body {
         height: 100px;
         margin: 5px 10px 5px 0;
     }
+    /* End Header */
+    /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_992.jpeg') no-repeat;
+        height: 661px;
+    }
+    /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+    /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_768.jpeg') no-repeat;
+        height: 512px;
+    }
+    /* End Home Page */
 }
 
 /********** Extra small devices only **********/
@@ -135,7 +158,7 @@ body {
     }
 
     #call-btn > a {
-        font-size: 1.5em;
+        font-size: 1.6em;
         display: block;
         margin: 0 20px;
         padding: 10px;
@@ -149,6 +172,14 @@ body {
         letter-spacing: .1em;
         text-transform: uppercase;
     }
+    /* End Header */
+    /* Home Page */
+    .container .jumbotron { /* Uses specificity to override */
+        margin-top: 30px;
+        padding: 0;
+    }
+    /* End Home Page */
+
 }
 
 #footer a {
