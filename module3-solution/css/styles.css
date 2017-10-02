@@ -24,7 +24,7 @@ body {
 .navbar-brand h1 { /* Restaurant Name */
     font-family: 'Abril Fatface', cursive;
     color: #73529A;
-    font-size: 1.8em;
+    font-size: 1.9em;
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: .2px .2px .2px #222;
@@ -39,7 +39,7 @@ body {
     /* font-family: 'Abril Fatface', cursive; */
     color: #555555;
     text-transform: uppercase;
-    font-size: .7em;
+    font-size: .8em;
     margin-top: 15px;
 }
 .navbar-brand p span { /* leaf icon */
@@ -87,6 +87,40 @@ body {
     box-shadow: 0 0 50px #08300A;
     border: 2px solid #08300A;
 }
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative; /* sets up anchor for child elements */
+    border: 2px solid #08300A;
+    overflow: hidden; /* hides extra bits of map */
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+
+#menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
 /* END HOME PAGE */
 
 /*****************************************/
@@ -139,7 +173,7 @@ body {
     }
     .navbar-brand h1 { /* Restaurant name */
         padding-top: 10px;
-        font-size: 6.5vw; /* 1vw = 1% of viewport width -- responsive font size unit*/
+        font-size: 6vw; /* 1vw = 1% of viewport width -- responsive font size unit*/
     }
     .navbar-brand p { /* Organic cert */
         font-size: .6em;
@@ -158,7 +192,7 @@ body {
     }
 
     #call-btn > a {
-        font-size: 1.6em;
+        font-size: 1.5em;
         display: block;
         margin: 0 20px;
         padding: 10px;
@@ -178,8 +212,26 @@ body {
         margin-top: 30px;
         padding: 0;
     }
+    #menu-tile, #specials-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+    }
     /* End Home Page */
+}
 
+/********** Super extra small devices only (e.g. iPhone4) **********/
+@media (max-width: 479px) {
+    /* Header */
+    .navbar-brand h1 {
+        padding-top: 8px;
+        font-size: 7vw;
+    }
+
+    /* Home Page */
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0 auto 15px;
+    }
 }
 
 #footer a {
