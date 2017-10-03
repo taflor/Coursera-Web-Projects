@@ -1,1 +1,43 @@
+/********************/
+/****** HEADER ******/
+/********************/
 
+#header-nav {
+    background-color: #AAA;
+    border-radius: 0;
+    border: 0;
+    height: 65px;
+}
+/* RESTAURANT NAME -- Food, LLC */
+.navbar-brand h1 {
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: .1px .1px .1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+/* MENU DROP DOWN -- only xs visible */
+.navbar-header button {
+    margin-top: 12.5px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid #000;
+}
+#nav-list {
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #000;
+    text-align: center;
+}
+
+#navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
