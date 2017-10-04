@@ -34,10 +34,12 @@ body {
     margin-bottom: 10px;
 }
 .navbar-header button {
-    margin-top: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 #nav-list {
     margin-top: 0;
+    margin-bottom: 0;
 }
 #nav-list a {
     color: #FFF;
@@ -52,4 +54,23 @@ body {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
     border: 2px solid #000;
 }
+
 /* MAIN CONTENT */
+#main-content > h1 {
+    margin: 0px auto 5px;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+#chicken, #beef, #sushi {
+    height: 1000px;
+    width: 80%;
+    margin: 10px auto;
+    background-color: #CCC;
+    padding: 0px 15px; /* reset top padding */
+}
+#home-tiles h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
